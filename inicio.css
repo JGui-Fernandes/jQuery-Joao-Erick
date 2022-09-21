@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 * {
     margin: 0;
 }
@@ -25,8 +27,9 @@ header .logo{
 .titulo{
     display: flex;
     align-items: center;
-    margin-left: 3%;
+    margin-left: 2%;
     width: 20%;
+    font-family:'Bree Serif', serif;
 }
 
 #titulo{
@@ -37,7 +40,7 @@ header .logo{
     width: auto;
     height: auto;
     display: flex;
-    margin-right: 2%;
+    margin-right: 4%;
     align-items: center;
 }
 
@@ -46,6 +49,7 @@ header .logo{
    justify-content: center;
    align-items: center;
    padding: 10px;
+   font-family: 'Bree Serif', serif;
 }
 
 .pages h3, a {
@@ -68,3 +72,67 @@ header .logo{
     border-radius: 10%;
     margin-left: 10px;
 }
+
+.container {
+    margin-top: 40px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.images {
+    padding-top: 20px;
+    flex-direction: row;
+    padding-bottom: 20px;
+    overflow: hidden;
+    max-width: 100%;
+	-moz-transition: all 2.0s;
+	-webkit-transition: all 2.0s;
+	transition: all 2.0s;
+    flex-basis: auto;
+    width: auto;
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.images :hover {
+    -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.main {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    width: 900px;
+    background-color: black;
+    padding: 30px;
+    padding-right: 0px;
+    height: auto;
+}
+
+.content h2 {
+    font-family: 'Bree Serif', serif; 
+    color: white;
+    margin-left: 40px;
+    display: flex;
+    background-color:rgb(74, 2, 26);
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
