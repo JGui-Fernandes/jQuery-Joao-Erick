@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA World Cup 2022</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+</head>
+
+<body>
+    <header>
+        <a class="logo"><img src="./images/copalogo.jpg" width="80px" height="80px"></a>
+        <div class="titulo">
+            <h2 id="titulo">FIFA World Cup 2022</h2>
+        </div>
+        <div class="pages">
+            <a href="./grupoA.html"><h3 class="grupo1">Grupo A</h3></a>
+            <a href="./grupoB.html"><h3 class="grupo2">Grupo B</h3></a>
+            <a href="./grupoC.html"><h3 class="grupo3">Grupo C</h3></a>
+            <a href="./grupoD.html"><h3 class="grupo4">Grupo D</h3></a>
+            <a href="./grupoE.html"><h3 class="grupo5">Grupo E</h3></a>
+            <a href="./grupoF.html"><h3 class="grupo6">Grupo F</h3></a>
+            <a href="./grupoG.html"><h3 class="grupo7">Grupo G</h3></a>
+            <a href="./grupoH.html"><h3 class="grupo8">Grupo H</h3></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="images">
+            <img class="alemanha" src="./images/grupoE/alemanha.png" alt="" width="150px" height="100px">
+            <img class="costarica" src="./images/grupoE/costarica.png" alt="" width="150px" height="100px">
+            <img class="espanha" src="./images/grupoE/espanha.png" alt="" width="150px" height="100px">
+            <img class="japao" src="./images/grupoE/japao.jpg" alt="" width="150px" height="100px">
+        </div>
+    </div>
+    <div class="main">
+        <div class="content">
+            <img id="switch" src="./images/grupoE/alemanha.png" alt="" width="500px" height="450px">
+                <div class="nomepais">
+                    <h2 id="country">Alamanha</h2>
+                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
+                    </p>
+                </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+
+jQuery(document).ready(function($){
+    $('.alemanha').on({
+        'click':function(){
+            $('#switch').attr('src','./images/grupoE/alemanha.png')
+            $("#country").text("Alemanha");
+        }
+    });
+    $('.costarica').on({
+        'click':function(){
+            $('#switch').attr('src','./images/grupoE/costarica.png')
+            $("#country").text("Costa Rica")
+        }
+    });
+    $('.espanha').on({
+        'click':function(){
+            $('#switch').attr('src','./images/grupoE/espanha.png')
+            $("#country").text("Espanha")
+        }
+    })
+    $('.japao').on({
+        'click':function(){
+            $('#switch').attr('src','./images/grupoE/japao.jpg')
+            $("#country").text("Japão");
+        }
+    })
+})
+</script>
+

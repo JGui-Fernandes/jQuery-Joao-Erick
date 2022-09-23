@@ -128,12 +128,13 @@ header .logo{
 .content h2 {
     font-family: 'Bree Serif', serif; 
     color: white;
-    display: flex;
+    display: block;
     background-color:rgb(74, 2, 26);
     height: 40px;
     padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
 }
 
 .nomepais {
