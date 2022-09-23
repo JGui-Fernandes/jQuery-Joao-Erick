@@ -39,7 +39,7 @@
             <img id="switch" src="./images/grupoD/australia.png" alt="" width="500px" height="450px">
                 <div class="nomepais">
                     <h2 id="country">Austrália</h2>
-                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
+                    <p id="textoPaises">A Austrália, oficialmente a Comunidade da Austrália, é um país soberano que compreende o continente australiano, a ilha da Tasmânia e várias ilhas menores. Com uma área de 7.617.930 quilômetros quadrados, a Austrália é o maior país em área da Oceania e o sexto maior país do mundo. 
                     </p>
                 </div>
         </div>
@@ -51,28 +51,37 @@
 <script>
     
 jQuery(document).ready(function($){
+    var textoAustralia = "A Austrália, oficialmente a Comunidade da Austrália, é um país soberano que compreende o continente australiano, a ilha da Tasmânia e várias ilhas menores. Com uma área de 7.617.930 quilômetros quadrados, a Austrália é o maior país em área da Oceania e o sexto maior país do mundo.";
+    var textoDinamarca = "A Dinamarca é um país escandinavo que compreende a Península da Jutlândia e inúmeras ilhas. Está ligado à vizinha Suécia através da ponte Öresund. Copenhague, sua capital, abriga palácios reais e o colorido porto de Nyhavn, além do parque de diversões Tivoli e da icônica estátua da “Pequena Sereia”. Odense é a cidade natal do escritor Hans Christian Andersen, com um núcleo medieval de ruas de paralelepípedos e casas em enxaimel.";
+    var textoFranca = "A França, na Europa Ocidental, abrange cidades medievais, aldeias alpinas e praias mediterrâneas. Paris, sua capital, é famosa por suas casas de moda, museus de arte clássica, incluindo o Louvre, e monumentos como a Torre Eiffel. O país também é conhecido por seus vinhos e gastronomia sofisticada. Os antigos desenhos rupestres de Lascaux, o teatro romano de Lyon e o vasto Palácio de Versalhes atestam sua rica história.";
+    var textoTunisia = "A Tunísia, oficialmente República da Tunísia, é o país mais setentrional da África. Faz parte da região do Magrebe, no norte da África, e faz fronteira com a Argélia a oeste e sudoeste, a Líbia a sudeste e o Mar Mediterrâneo a norte e leste.";
+
     $('.australia').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoD/australia.png')
             $("#country").text("Austrália");
+            $("#textoPaises").text(textoAustralia);
         }
     });
     $('.dinamarca').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoD/dinamarca.png')
-            $("#country").text("Senegal")
+            $("#country").text("Dinamarca")
+            $("#textoPaises").text(textoDinamarca);
         }
     });
     $('.franca').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoD/franca.jpg')
             $("#country").text("França")
+            $("#textoPaises").text(textoFranca);
         }
     })
     $('.tunisia').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoD/tunisia.jpg')
             $("#country").text("Tunísia");
+            $("#textoPaises").text(textoTunisia);
         }
     })
 })

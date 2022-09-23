@@ -39,7 +39,7 @@
             <img id="switch" src="./images/grupoG/Brasil.png" alt="" width="500px" height="450px">
                 <div class="nomepais">
                     <h2 id="country">Brasil</h2>
-                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
+                    <p id="textoPaises">O Brasil, oficialmente República Federativa do Brasil, é o maior país da América do Sul e da América Latina. Com 8,5 milhões de quilômetros quadrados e mais de 214 milhões de habitantes, o Brasil é o quinto maior país do mundo em área e o sétimo mais populoso. 
                     </p>
                 </div>
         </div>
@@ -51,28 +51,37 @@
 <script>
     
 jQuery(document).ready(function($){
+    var textoBrasil = "O Brasil, oficialmente República Federativa do Brasil, é o maior país da América do Sul e da América Latina. Com 8,5 milhões de quilômetros quadrados e mais de 214 milhões de habitantes, o Brasil é o quinto maior país do mundo em área e o sétimo mais populoso.";
+    var textoCamaroes = "Camarões, no Golfo da Guiné, é um país da África Central de terreno e vida selvagem variados. Sua capital do interior, Yaoundé, e sua maior cidade, o porto de Douala, são pontos de passagem para locais de ecoturismo e resorts de praia como Kribi – perto das cachoeiras Chutes de la Lobé, que mergulham diretamente no mar – e Limbe, onde o Limbe Wildlife Center abriga primatas resgatados.";
+    var textoCoreia = "A Coreia do Sul, uma nação do leste asiático na metade sul da península coreana, compartilha uma das fronteiras mais militarizadas do mundo com a Coreia do Norte. É igualmente conhecida por sua paisagem verde e montanhosa pontilhada de cerejeiras e templos budistas centenários, além de suas vilas costeiras de pescadores, ilhas subtropicais e cidades de alta tecnologia como Seul, a capital.";
+    var textoGhana = "Gana, oficialmente a República de Gana, é um país da África Ocidental. Faz fronteira com o Golfo da Guiné e o Oceano Atlântico a sul, fazendo fronteira com a Costa do Marfim a oeste, Burkina Faso a norte e Togo a leste.";
+
     $('.brasil').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoG/Brasil.png')
             $("#country").text("Brasil");
+            $("#textoPaises").text(textoBrasil);
         }
     });
     $('.camaroes').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoG/Camaroes.png')
             $("#country").text("Camarões")
+            $("#textoPaises").text(textoCamaroes);
         }
     });
     $('.coreia').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoG/Coreia.png')
             $("#country").text("Coreia do Sul")
+            $("#textoPaises").text(textoCoreia);
         }
     })
     $('.ghana').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoG/Ghana.png')
             $("#country").text("Ghana");
+            $("#textoPaises").text(textoGhana);
         }
     })
 })

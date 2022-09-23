@@ -39,7 +39,7 @@
             <img id="switch" src="./images/grupoB/england.png" alt="" width="500px" height="450px">
                 <div class="nomepais">
                     <h2 id="country">Inglaterra</h2>
-                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
+                    <p id="textoPaises">A Inglaterra é um país que faz parte do Reino Unido. Compartilha fronteiras terrestres com o País de Gales a oeste e a Escócia ao norte. O mar da Irlanda fica a noroeste e o mar celta a sudoeste. É separado da Europa continental pelo Mar do Norte a leste e pelo Canal da Mancha ao sul.
                     </p>
                 </div>
         </div>
@@ -51,28 +51,37 @@
 <script>
 
 jQuery(document).ready(function($){
+    var textoInglaterra = "A Inglaterra é um país que faz parte do Reino Unido. Compartilha fronteiras terrestres com o País de Gales a oeste e a Escócia ao norte. O mar da Irlanda fica a noroeste e o mar celta a sudoeste. É separado da Europa continental pelo Mar do Norte a leste e pelo Canal da Mancha ao sul.";
+    var textoEua = "Os EUA são um país de 50 estados que cobrem uma vasta faixa da América do Norte, com o Alasca no noroeste e o Havaí estendendo a presença do país no Oceano Pacífico. As principais cidades da Costa Atlântica são Nova York, um centro global de finanças e cultura, e a capital Washington, DC. A metrópole do centro-oeste de Chicago é conhecida pela arquitetura influente e na costa oeste, a Hollywood de Los Angeles é famosa pelo cinema.";
+    var textoGales = "O País de Gales é um país no sudoeste da Grã-Bretanha conhecido por seu litoral acidentado, parques nacionais montanhosos, língua galesa distinta e cultura celta. Cardiff, a capital, é uma cidade costeira refinada com vida noturna e um castelo medieval com interiores ornamentados em estilo neogótico. No noroeste, o Parque Nacional de Snowdonia tem lagos, relevos glaciais, trilhas para caminhadas e uma ferrovia até o pico de Snowdon.";
+    var textoIra = "Irã ou República Islâmica do Irã é um país localizado no Oriente Médio, um subcontinente da Ásia. O país possui uma área de 1 648 000 km², onde vivem cerca de 74,1 milhões de habitantes.A topografia do país é constituída basicamente por planaltos, havendo uma cadeia de montanhas ao redor dos mesmos. Na parte central estão estabelecidos dois desertos, o Dasht-e-kavir e o Dasht-e-Lut. Ao norte, próximo ao Mar Cáspio, se encontram as montanhas Elburz, que abrigam vulcões em atividade. Essa área montanhosa possui o ponto mais elevado do país, o Monte Demavend, com 5.671 metros de altitude.";
+
     $('.inglaterra').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoB/england.png')
             $("#country").text("Inglaterra");
+            $("#textoPaises").text(textoInglaterra);
         }
     });
     $('.eua').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoB/eua.jpg')
             $("#country").text("Estados Unidos")
+            $("#textoPaises").text(textoEua);
         }
     });
     $('.gales').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoB/gales.png')
             $("#country").text("País de Gales")
+            $("#textoPaises").text(textoGales);
         }
     })
     $('.ira').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoB/ira.png')
             $("#country").text("Irã");
+            $("#textoPaises").text(textoIra);
         }
     })
 })

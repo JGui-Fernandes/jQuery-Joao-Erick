@@ -38,8 +38,8 @@
         <div class="content">
             <img id="switch" src="./images/grupoE/alemanha.png" alt="" width="500px" height="450px">
                 <div class="nomepais">
-                    <h2 id="country">Alamanha</h2>
-                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
+                    <h2 id="country">Alemanha</h2>
+                    <p id="textoPaises">A Alemanha é um país da Europa Ocidental com uma paisagem de florestas, rios, cadeias de montanhas e praias do Mar do Norte. Tem mais de 2 milênios de história. Berlim, sua capital, abriga cenas de arte e vida noturna, o Portão de Brandemburgo e muitos locais relacionados à Segunda Guerra Mundial. Munique é conhecida por sua Oktoberfest e cervejarias, incluindo a Hofbräuhaus do século XVI. Frankfurt, com seus arranha-céus, abriga o Banco Central Europeu.  
                     </p>
                 </div>
         </div>
@@ -51,28 +51,38 @@
 <script>
 
 jQuery(document).ready(function($){
+
+    var textoAlemanha = "A Alemanha é um país da Europa Ocidental com uma paisagem de florestas, rios, cadeias de montanhas e praias do Mar do Norte. Tem mais de 2 milênios de história. Berlim, sua capital, abriga cenas de arte e vida noturna, o Portão de Brandemburgo e muitos locais relacionados à Segunda Guerra Mundial. Munique é conhecida por sua Oktoberfest e cervejarias, incluindo a Hofbräuhaus do século XVI. Frankfurt, com seus arranha-céus, abriga o Banco Central Europeu.";
+    var textoCosta = "A Costa Rica é um país acidentado da América Central com florestas tropicais e costas no Caribe e no Pacífico. Embora sua capital, San Jose, seja o lar de instituições culturais como o Museu do Ouro Pré-Colombiano, a Costa Rica é conhecida por suas praias, vulcões e biodiversidade. Aproximadamente um quarto de sua área é composta de selva protegida, repleta de vida selvagem, incluindo macacos-aranha e pássaros quetzal.";
+    var textoEspanha = "A Espanha, um país da Península Ibérica da Europa, inclui 17 regiões autônomas com geografia e culturas diversas. A capital Madri abriga o Palácio Real e o Museu do Prado, que abriga obras de mestres europeus. Segóvia tem um castelo medieval (o Alcázar) e um aqueduto romano intacto. A capital da Catalunha, Barcelona, ​​é definida pelos extravagantes marcos modernistas de Antoni Gaudí, como a igreja da Sagrada Família.";
+    var textoJapao = "O Japão é um país insular no leste da Ásia. Está situado no noroeste do Oceano Pacífico e faz fronteira a oeste com o Mar do Japão, enquanto se estende desde o Mar de Okhotsk, ao norte, até o Mar da China Oriental, Mar das Filipinas e Taiwan, ao sul.";
+
     $('.alemanha').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoE/alemanha.png')
             $("#country").text("Alemanha");
+            $("#textoPaises").text(textoAlemanha);
         }
     });
     $('.costarica').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoE/costarica.png')
             $("#country").text("Costa Rica")
+            $("#textoPaises").text(textoCosta);
         }
     });
     $('.espanha').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoE/espanha.png')
             $("#country").text("Espanha")
+            $("#textoPaises").text(textoEspanha);
         }
     })
     $('.japao').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoE/japao.jpg')
             $("#country").text("Japão");
+            $("#textoPaises").text(textoJapao);
         }
     })
 })

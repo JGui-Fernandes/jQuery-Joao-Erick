@@ -39,8 +39,7 @@
             <img id="switch" src="./images/grupoC/arabiasaudita.png" alt="" width="500px" height="450px">
                 <div class="nomepais">
                     <h2 id="country">Arábia Saudita</h2>
-                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
-                    </p>
+                    <p id="textoPaises">A Arábia Saudita, oficialmente o Reino da Arábia Saudita, é um país da Península Arábica na Ásia Ocidental. Tem uma área de cerca de 2.150.000 km², tornando-se o quinto maior país da Ásia, o segundo maior do mundo árabe e o maior da Ásia Ocidental.                    </p>
                 </div>
         </div>
         
@@ -49,30 +48,38 @@
 </html>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script>
-    
+var textoArabia = "A Arábia Saudita, oficialmente o Reino da Arábia Saudita, é um país da Península Arábica na Ásia Ocidental. Tem uma área de cerca de 2.150.000 km², tornando-se o quinto maior país da Ásia, o segundo maior do mundo árabe e o maior da Ásia Ocidental.";
+var textoArgentina = "A Argentina, oficialmente República Argentina, é um país da metade sul da América do Sul. A Argentina cobre uma área de 2.780.400 km², tornando-se o segundo maior país da América do Sul depois do Brasil, o quarto maior país das Américas e o oitavo maior país do mundo.";
+var textoMexico = "O México, oficialmente Estados Unidos Mexicanos, é um país na porção sul da América do Norte. Faz fronteira ao norte com os Estados Unidos; ao sul e oeste pelo Oceano Pacífico; a sudeste pela Guatemala, Belize e Mar do Caribe; e a leste pelo Golfo do México.";
+var textoPolonia = "A Polônia, oficialmente a República da Polônia, é um país da Europa Central. Está dividido em 16 províncias administrativas chamadas voivodias, cobrindo uma área de 312.696 km². A Polônia tem uma população de mais de 38 milhões e é o quinto estado-membro mais populoso da União Europeia.";
+
 jQuery(document).ready(function($){
     $('.arabia').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoC/arabiasaudita.png')
             $("#country").text("Arábia Saudita");
+            $("#textoPaises").text(textoArabia);
         }
     });
     $('.argentina').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoC/argentina.jpg')
             $("#country").text("Argentina")
+            $("#textoPaises").text(textoArgentina);
         }
     });
     $('.mexico').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoC/mexico.png')
             $("#country").text("México")
+            $("#textoPaises").text(textoMexico);
         }
     })
     $('.polonia').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoC/polonia.png')
             $("#country").text("Polonia");
+            $("#textoPaises").text(textoPolonia);
         }
     })
 })

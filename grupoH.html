@@ -39,7 +39,7 @@
             <img id="switch" src="./images/grupoH/Portugal.png" alt="" width="500px" height="450px">
                 <div class="nomepais">
                     <h2 id="country">Portugal</h2>
-                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
+                    <p id="textoPaises">Portugal é um país do sul da Europa na Península Ibérica, fazendo fronteira com a Espanha. A sua localização no Oceano Atlântico influenciou muitos aspetos da sua cultura: o bacalhau e a sardinha assada são pratos nacionais, as praias do Algarve são um destino importante e grande parte da arquitetura do país data dos anos 1500-1800, quando Portugal tinha um poderoso império marítimo. 
                     </p>
                 </div>
         </div>
@@ -51,28 +51,37 @@
 <script>
 
 jQuery(document).ready(function($){
+    var textoPortugal = "Portugal é um país do sul da Europa na Península Ibérica, fazendo fronteira com a Espanha. A sua localização no Oceano Atlântico influenciou muitos aspetos da sua cultura: o bacalhau e a sardinha assada são pratos nacionais, as praias do Algarve são um destino importante e grande parte da arquitetura do país data dos anos 1500-1800, quando Portugal tinha um poderoso império marítimo.";
+    var textoServia = "A Sérvia, oficialmente a República da Sérvia, é um país sem litoral no sudeste e centro da Europa, situado na encruzilhada da planície da Panônia e dos Balcãs.";
+    var textoSuica = "A Suíça é um país montanhoso da Europa Central, lar de inúmeros lagos, aldeias e os altos picos dos Alpes. Suas cidades contêm bairros medievais, com pontos de referência como a torre do relógio Zytglogge da capital Berna e a ponte de madeira da capela de Lucerna. O país também é conhecido por seus resorts de esqui e trilhas para caminhadas. O setor bancário e financeiro são setores-chave, e os relógios suíços e o chocolate são de renome mundial.";
+    var textoUruguai = "O Uruguai é um país sul-americano conhecido por seu interior verdejante e costa repleta de praias. A capital, Montevidéu, gira em torno da Plaza Independencia, que já abrigou uma cidadela espanhola. Ela leva à Ciudad Vieja (Cidade Velha), com prédios art déco, casas coloniais e o Mercado del Puerto, um antigo mercado do porto com muitas churrascarias. La Rambla, um calçadão à beira-mar, passa por barracas de peixe, píeres e parques.";
+    
     $('.portugal').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoH/Portugal.png')
             $("#country").text("Portugal");
+            $("#textoPaises").text(textoPortugal);
         }
     });
     $('.servia').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoH/Servia.png')
             $("#country").text("Sérvia")
+            $("#textoPaises").text(textoServia);
         }
     });
     $('.suica').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoH/Suica.png')
             $("#country").text("Suíça")
+            $("#textoPaises").text(textoSuica);
         }
     })
     $('.uruguai').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoH/Uruguay.png')
             $("#country").text("Uruguai");
+            $("#textoPaises").text(textoUruguai);
         }
     })
 })

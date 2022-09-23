@@ -39,7 +39,7 @@
             <img id="switch" src="./images/grupoF/Belgica.png" alt="" width="500px" height="450px">
                 <div class="nomepais">
                     <h2 id="country">Bélgica</h2>
-                    <p id="textoPaises">O Catar é um país peninsular árabe cuja paisagem abrange um deserto árido e um longo litoral no Golfo Pérsico (Árabe) repleto de praias e dunas. Também na costa, fica a capital Doha, conhecida pelos arranha-céus futuristas e pela arquitetura ultramoderna inspirada no antigo design islâmico, com exemplos como o Museu de Arte Islâmica, feito de calcário e localizado no calçadão à beira-mar da cidade, chamado de Corniche. 
+                    <p id="textoPaises">A Bélgica, um país da Europa Ocidental, é conhecida pelas cidades medievais, arquitetura renascentista e sede da União Europeia e da OTAN. O país tem regiões distintas, incluindo Flandres de língua holandesa ao norte, Valônia de língua francesa ao sul e uma comunidade de língua alemã a leste. A capital bilíngue, Bruxelas, tem guildhalls ornamentadas na Grand-Place e elegantes edifícios art-nouveau.
                     </p>
                 </div>
         </div>
@@ -51,28 +51,37 @@
 <script>
     
 jQuery(document).ready(function($){
+    var textoBelgica = "A Bélgica, um país da Europa Ocidental, é conhecida pelas cidades medievais, arquitetura renascentista e sede da União Europeia e da OTAN. O país tem regiões distintas, incluindo Flandres de língua holandesa ao norte, Valônia de língua francesa ao sul e uma comunidade de língua alemã a leste. A capital bilíngue, Bruxelas, tem guildhalls ornamentadas na Grand-Place e elegantes edifícios art-nouveau.";
+    var textoCanada = "O Canadá é um país da América do Norte. Suas dez províncias e três territórios se estendem do Oceano Atlântico ao Oceano Pacífico e ao norte no Oceano Ártico, cobrindo mais de 9,98 milhões de quilômetros quadrados, tornando-o o segundo maior país do mundo em área total.";
+    var textoCroacia = "A República da Croácia é um país independente localizado a sudeste da Europa, produto do esfacelamento da antiga Iugoslávia e de consequentes conflitos de cunho nacionalista ou étnico. Seu território de 56.542 km² é equivalente ao estado do Espírito Santo, e sua capital é Zagreb. A grande maioria da população é de etnia croata, povo que tem uma língua comum de mesmo nome, além de uma religião comum, o cristianismo, baseado na igreja católica romana. A moeda local é o kuna.";
+    var textoMarrocos = "Marrocos, um país do norte da África banhado pelo Oceano Atlântico e pelo Mar Mediterrâneo, distingue-se pelas suas influências culturais berberes, árabes e europeias. A medina de Marrakech, um bairro medieval labiríntico, oferece entretenimento em sua praça Djemaa el-Fna e souks (mercados) que vendem cerâmica, joias e lanternas de metal. A Kasbah dos Udayas da capital Rabat é um forte real do século XII com vista para a água.";
+
     $('.belgica').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoF/Belgica.png')
             $("#country").text("Bélgica");
+            $("#textoPaises").text(textoBelgica);
         }
     });
     $('.canada').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoF/Canada.png')
             $("#country").text("Canadá")
+            $("#textoPaises").text(textoCanada);
         }
     });
     $('.croacia').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoF/Croacia.png')
             $("#country").text("Croácia")
+            $("#textoPaises").text(textoCroacia);
         }
     })
     $('.marrocos').on({
         'click':function(){
             $('#switch').attr('src','./images/grupoF/Marrocos.png')
             $("#country").text("Marrocos");
+            $("#textoPaises").text(textoMarrocos);
         }
     })
 })
